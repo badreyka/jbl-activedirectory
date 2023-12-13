@@ -776,6 +776,7 @@ Currently supported ldapjs options are:
   If null is returned, the result is excluded.
 + `logging` - A logger that conforms to the [abstract-logging][abstract-logging]
   interface. The library logs all messages at the "trace" level.
++ `searchNestedGroups` - Indicates that result should include nested groups. Defaults to false
 
   ```js
   const pino = require('pino')
