@@ -778,13 +778,20 @@ Currently supported ldapjs options are:
   interface. The library logs all messages at the "trace" level.
 + `searchNestedGroups` - Indicates that result should include nested groups. Defaults to false
 
-  ```js
-  const pino = require('pino')
-  const pretty = pino.pretty()
-  pretty.pipe(process.stdout)
-  const log = pino({level: 'trace'}, pretty)
-  const ad = new ActiveDirectory({logging: log})
-  ```
+```js
+  const customLogger = {
+    log: function(level, message) {
+        console.log(level + ': ' + message);
+    },
+    trace: function(message) {
+        const args = Array.from(arguments).map(arg => 
+            typeof arg === 'object' ? JSON.stringify(arg, null, 2) : arg
+        );
+        console.log('trace: ' + args.join(' '));
+    }
+  };
+  const ad = new ActiveDirectory({ ...adConfig, logging: customLogger })
+```
 
 [abstract-logging]: https://www.npmjs.com/package/abstract-logging
 
