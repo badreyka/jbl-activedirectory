@@ -1,7 +1,7 @@
 {
   "author": "badreyka",
   "name": "@jbl-system/activedirectory2",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "ActiveDirectory is an ldapjs client for authN (authentication) and authZ (authorization) for Microsoft Active Directory with range retrieval support for large Active Directory installations.",
   "contributors": [
     "badreyka <andrey@ufgca.com>"
