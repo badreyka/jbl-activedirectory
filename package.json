@@ -1,7 +1,7 @@
 {
   "author": "badreyka",
   "name": "@jbl-system/activedirectory2",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "ActiveDirectory is an ldapjs client for authN (authentication) and authZ (authorization) for Microsoft Active Directory with range retrieval support for large Active Directory installations.",
   "contributors": [
     "badreyka <andrey@ufgca.com>"
@@ -19,7 +19,7 @@
     "active directory"
   ],
   "bugs": {
-    "url": "https://github.com/badreyka/node-activedirectory/issues"
+    "url": "https://github.com/badreyka/jbl-activedirectory/issues"
   },
   "dependencies": {
     "abstract-logging": "^2.0.0",
@@ -40,7 +40,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badreyka/node-activedirectory.git"
+    "url": "git+https://github.com/badreyka/jbl-activedirectory.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -51,5 +51,5 @@
     "standard": "^14.3.4",
     "tap": "^14.10.8"
   },
-  "homepage": "https://github.com/badreyka/node-activedirectory#readme"
+  "homepage": "https://github.com/badreyka/jbl-activedirectory#readme"
 }
